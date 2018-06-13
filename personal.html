@@ -48,6 +48,37 @@
 
 
 
+/* change the background color */
+.navbar-custom {
+    background-color: black;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+    padding: 0.8rem 1rem;
+}
+/* change the link color and add padding for height */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+    padding: 1.2rem 1.2rem;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+    background-color: #0B7F68;; /* add background-color to active links */
+}
+
+
+
+
+
+
+
+
+
+
 
 
     #preloader {
@@ -85,15 +116,16 @@
     body{
      font-family: 'Roboto Slab', serif; 
      
-     background-image:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(backk.jpg);
+     background-image:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(.png);
      background-size: cover;
      background-position: center;
      background-attachment: fixed; 
-
-     
+      margin:0px;
+     height: 100%;
   	/*padding: 0; 
   	overflow-x: hidden;
     width: 100%;*/
+
   }
 
   * {
@@ -123,12 +155,12 @@
     }*/
 
 
-    .navbar{
+    /*#xxx{
      border-bottom: #085243 3px solid;opacity: 0.8;
-     background-color:black !important;
-   }
+     
+   }*/
    #pppp{
-    color: #0B7F68;
+    color: #fff;
   }
   #pppp:hover{
    color:#fff;
@@ -228,7 +260,7 @@
 
   @media screen and (max-width: 480px) {
     .mediaq {
-      font-size: 30px;
+      font-size: 50px;
       padding-top: 100px;
     }
     .pera{
@@ -421,7 +453,7 @@
 
     <!--navbar!-->
 
-    <nav class="navbar navbar-expand-sm  navbar-dark bg-dark py-3">
+    <nav class="navbar navbar-expand-sm p-0 navbar-dark navbar-custom" id="xxx">
       <div class="container">
         <a class="navbar-brand" href="#"  id="pppp">HOME</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon "></span></button>
@@ -540,7 +572,10 @@
     </section>
     <!--carousel end !-->
 
-    <div class="py-5">
+    <div class="py-5"
+  style="" 
+
+    >
      <div class="container">
       <div class="row">
        <div class="col-lg-3 text-center">
@@ -649,13 +684,16 @@
 
 <!--skills!-->
 
-<div class="py-5 text-center text-white">
+<div class="py-5 text-center text-white" style="background-image:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(bc3.png);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed; ">
   
   <div class="container">
 
     <div class="row">
       <div class="col-lg-12">
-        <h3 >MY SKILLS</h3>
+        <h3 style="color: black">MY SKILLS</h3>
       </div>
       
     </div>
@@ -713,12 +751,17 @@
 
 
 
-  <div style="
-    padding: 0;
-    margin: 0;
+  <footer style="
+      
+    margin-bottom:-70px;
+    padding-top: 30px;
+    padding-bottom: 30px; 
     text-align: center;
     font-family: arial;
-    color: #fff;border-top: rgb(255,255,255,0.2) 3px solid;" class="pt-5" id="agrawal">
+    color: #fff;border-top: black 3px solid; background-image:  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(nature.jpg);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;" id="agrawal">
 
     
     
@@ -729,7 +772,7 @@
     <li><a href="https://plus.google.com/u/0/109987289949504261649/posts" class="google-plus"><i class="fa fa-instagram"></i></a></li>
     <li><a href="https://plus.google.com/u/0/109987289949504261649/posts" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
     <li><a href="https://plus.google.com/u/0/109987289949504261649/posts" class="pinterest"><i class="fa fa-github"></i></a></li></ul><br/>
-  </div>
+  </footer>
     
 
 

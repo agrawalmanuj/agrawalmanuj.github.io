@@ -1,0 +1,674 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<title>Manuj Agrawal</title>
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+
+
+
+    
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script>
+     
+
+      window.addEventListener("load",function(){
+
+        var pre = document.getElementById("preloader");
+        document.body.removeChild(pre);
+
+      });
+
+
+    </script>
+
+
+    <style>
+
+
+
+
+
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999999;
+      background: black;
+    }
+
+
+
+
+    #preloader > i{
+    	position: absolute;
+      font-size: 48px;
+      top: 50%;
+      left: 50%;
+      color: #0B7F68;
+      
+
+    }
+
+
+
+
+
+
+
+
+
+    
+    body{
+     font-family: 'Roboto Slab', serif; 
+     
+     background-image:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(backk.jpg);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed; 
+
+     
+  	/*padding: 0; 
+  	overflow-x: hidden;
+    width: 100%;*/
+  }
+
+  * {
+  	margin:0;
+  	padding: 0;
+  }
+
+
+
+  /*.carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+     
+  /*img{
+
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+    }*/
+  /*#p{
+  	width: 100%;
+  	height: 200px;
+    }*/
+  /*.carousel-item{
+  	height: 450px;
+    }*/
+
+
+    .navbar{
+     border-bottom: #085243 3px solid;opacity: 0.8;
+     background-color:black !important;
+   }
+   #pppp{
+    color: #0B7F68;
+  }
+  #pppp:hover{
+   color:#fff;
+  }
+  .btn-outline-light{
+  	color: #fff !important;
+  }
+
+
+
+  .carousel-item {
+    height: 100vh; 
+  }
+
+  .carousel-image-1 {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1)),url("pp.jpg");
+    background-size: cover; }
+
+    .carousel-image-2 {
+      background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("game.jpg");
+      background-size: cover; }
+
+      .carousel-image-3 {
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1)),url("code.jpg");
+        background-size: cover; } 
+
+        .carousel-image-4 {
+          background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1)),url("mountains.jpg");
+          background-size: cover; }
+
+          .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230B7F68' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+          }
+
+          .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230B7F68' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+          }
+
+
+          #mmm{
+           color: #fff;
+           border:2px solid #fff;
+           border-radius: 0px;
+         }
+         #mmm:hover{
+           
+           background-color: #085243 !important;
+
+           border-color: #085243 !important;
+         }
+
+       }
+       #ppp:hover{
+         color: #fff !important;
+         
+
+       }
+  /*.nav-link:hover{
+  	border-left: 1px solid white;
+  	
+    }*/
+    .card:hover{
+
+
+     
+
+
+      color: #fff;
+
+    }
+    .card{
+     border-radius: 0px;
+     border-color: #0B7F68;
+
+     color: #0B7F68;
+     background-color: transparent;
+
+
+  	/*background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(back5.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;*/
+
+  	/*background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(in.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;*/
+  }
+  .inp{
+  	background-image:  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(nature.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed; 
+  	
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .mediaq {
+      font-size: 30px;
+      padding-top: 100px;
+    }
+    .pera{
+    	font-size:12px;
+    	font-weight: -10;
+    }
+    /*.carousel-item {
+    height: 500px; 
+    }*/
+
+    .mediaq2 {
+      font-size: 30px;
+      padding-top: 75px;
+    }
+    .pera2{
+    	display: none;
+    }
+    .game{
+    	font-size: 14px;
+    }
+    .kal{
+    	display: none;
+    }
+
+  #footer a {
+    width: 46px;
+      height: 46px;
+      font-size: 24px;
+       line-height: 44px;
+       }
+     
+
+
+
+
+  } 
+
+
+  @media screen and (min-width: 481px) { 
+    /*.big{
+    position: absolute;
+    margin: 0;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }*/
+    .mediaq {
+      font-size: 4.5rem;
+      padding-top: 140px;
+    }
+    .pera{
+    	font-size:18px;
+    	font-weight: -10;
+    }
+    /*.carousel-item {
+    height: 520px; 
+
+    }*/
+    .mediaq2 {
+      font-size: 4.5rem;
+      padding-top: 140px;
+    }
+    .pera2{
+    	font-size:18px;
+    	font-weight: -10;
+    }
+  }
+
+
+
+  /*.carousel-item p {
+    position: absolute;
+    margin: 0;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }*/
+
+
+
+
+
+
+
+  .social-nav {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 10px auto; }
+    .social-nav li {
+      display: inline-block; }
+    .social-nav a {
+      display: inline-block;
+      float: left;
+      width: 48px;
+      height: 48px;
+      font-size: 20px;
+      color: #FFF;
+      text-decoration: none;
+      cursor: pointer;
+      text-align: center;
+      line-height: 48px;
+      background: #000;
+      position: relative;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+
+
+
+
+
+  .model-7 li {
+    margin: 0 10px; }
+  .model-7 a {
+    background: none;
+    -webkit-box-shadow: 0 0 4px 3px;
+    -moz-box-shadow: 0 0 4px 3px;
+    box-shadow: 0 0 4px 3px;
+    text-shadow: 0 0 1px #333333;
+    -webkit-transition: -webkit-transform 0.4s, background 0.4s;
+    -moz-transition: -moz-transform 0.4s, background 0.4s;
+    -o-transition: -o-transform 0.4s, background 0.4s;
+    transition: transform 0.4s, background 0.4s;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%; }
+    .model-7 a .fa {
+      -webkit-transition: -webkit-transform 1s;
+      -moz-transition: -moz-transform 1s;
+      -o-transition: -o-transform 1s;
+      transition: transform 1s; }
+    .model-7 a:hover {
+      background: ; }
+      .model-7 a:hover .fa {
+        -webkit-transform: rotate(-10deg) scale(3);
+        -moz-transform: rotate(-10deg) scale(3);
+        -ms-transform: rotate(-10deg) scale(3);
+        -o-transform: rotate(-10deg) scale(3);
+        transform: rotate(-10deg) scale(3); }
+  .model-7 .twitter {
+    color: #085243; }
+  .model-7 .facebook {
+    color: #085243; }
+  .model-7 .google-plus {
+    color: #085243; }
+  .model-7 .linkedin {
+    color: #085243; }
+  .model-7 .pinterest {
+    color: #085243; }
+
+
+  .model-7 .twitter:hover {
+    color: #00aced; }
+  .model-7 .facebook:hover {
+    color: #3b579d; }
+  .model-7 .google-plus:hover {
+    color: #fb3958; }
+  .model-7 .linkedin:hover {
+    color: #007bb6; }
+  .model-7 .pinterest:hover {
+    color: #333; }
+
+
+
+
+
+
+
+
+
+
+
+  </style> 
+
+
+
+
+  </head>
+  <body >
+    <div id="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+
+
+
+
+    <!--navbar!-->
+
+    <nav class="navbar navbar-expand-sm py-3 navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"  id="pppp">HOME</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon "></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav ml-auto" >
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="pppp">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"  id="pppp">My Skills</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="#"  id="pppp">Contact Me</a>
+            </li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="#"  id="pppp">Hire Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <!--nav bar end !-->
+
+
+    <!-- carousal start!-->
+    <section id="showcase">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-image-1 active">
+            <div class="container text-center text-white " >
+              <div class="big">
+                <h1  style="font-weight: 700; color: #0B7F68;" class="display-3 mediaq animated  fadeInDownBig" id=mp>
+                MANUJ AGRAWAL</h1>
+                
+                <p class=" pera animated  fadeInUpBig">Front End Web Developer | Competative Coder</p>
+              </div>
+              
+              <div class="carousel-caption   mb-5">
+                
+                
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="carousel-item carousel-image-2">
+            <div class="container text-center text-white">
+
+            	<h1  style="font-weight: 700;color: #0B7F68;" class=" display-3 mediaq2 animated  fadeInDownBig">FUN WITH <span style="color: #fff;">JAVASCRIPT</span></h1><br>
+              <!--<p class="lead">PIG GAME</p><span style="display: inline;">REACTION TESTER</span>!-->
+              <p class="pera2 animated  fadeInUpBig">Let's Play</p><br class="kal">
+              <a href="#" class="btn  btn-outline-dark btn-lg game animated  infinite pulse" id="mmm">Pig Game</a>&nbsp;&nbsp;
+              <a href="#" class="btn  btn-outline-dark btn-lg game animated  infinite pulse" id="mmm">Reaction Tester</a>
+
+              <div class="carousel-caption d-none d-sm-block mb-5">
+                
+              </div>
+            </div>
+          </div>
+
+          
+
+
+
+
+          <div class="carousel-item carousel-image-3">
+            <div class="container text-center text-white">
+            	<h1  style="padding-top: 140px;font-weight: 700;color: #fff" class="display-3 animated  fadeInDownBig">JQUERY <span style="color: #0B7F68">CODE PLAYER</span></h1><br>
+            	<p class="lead animated  fadeInUpBig">You Can Code Html Css Javascript Simultaneously On Web</p><br>
+            	<a href="#" class="btn btn-outline-dark btn-lg animated  infinite pulse" id="mmm" >Code Player</a>&nbsp;&nbsp;
+            	<a href="#" class="btn btn-outline-dark btn-lg animated  infinite pulse" id="mmm">Source Code</a>
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item carousel-image-4">
+            <div class="container text-center text-white">
+            	<h1  style="padding-top: 140px;font-weight: 700;color: #0B7F68" class=" display-3 animated  fadeInDownBig">Themes <span style="color: #fff;">&</span> Templates</h1><br>
+            	<p class="lead animated  fadeInUpBig">You Can Use this For your Website</p><br>
+            	<a href="#" class="btn btn-outline-dark btn-lg animated  infinite pulse" id="mmm" >Admin Panel Theme</a>&nbsp;&nbsp;
+              <a href="#" class="btn btn-outline-dark btn-lg animated  infinite pulse" id="mmm">Glozzom Multipage </a>&nbsp;&nbsp;
+              <a href="#" class="btn btn-outline-dark btn-lg animated  pulse infinite" id="mmm">Portfoliogrid </a>
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+          <span class="carousel-control-prev-icon animated  infinite shake"></span>
+        </a>
+
+        <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+          <span class="carousel-control-next-icon animated infinite shake"></span>
+        </a>
+      </div>
+    </section>
+    <!--carousel end !-->
+
+    <div class="py-5">
+     <div class="container">
+      <div class="row">
+       <div class="col-lg-3 text-center">
+        <h3>About Me</h3>
+      </div>
+      
+    </div>
+
+  </div>
+
+
+  </div>
+
+
+  <!--card!-->
+  <div class="py-5 text-center inp">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-12">
+  				<h2 class="text-white">My Inspiration</h2>
+  			</div>
+  		</div>
+  		<div class="row py-5">
+  			<div class="col-lg-3 col-md-6" style="margin-top: 50px;">
+
+
+
+  				<div class="card shadow-lg h-100">
+            <div class="card-body">
+              <img src="al.jpg" alt="" class="img-fluid  mb-3" style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
+              <h3>Albert Einstein</h3>
+              <h5 class="text-muted">Scientist</h5><br>
+              <p class="">“Education is what remains after one has forgotten what one has learned in school.”</p>
+              
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-lg-3 col-md-6" style="margin-top: 50px;">
+
+
+
+          <div class="card shadow-lg h-100">
+            <div class="card-body">
+              <img src="Sundar.jpg" alt="" class="img-fluid  mb-3" style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
+              <h3>Sundar Pichai</h3>
+              <h5 class="text-muted">CEO, Google</h5><br>
+              <p>“A person who is happy is not because everything is right in his life, he is happy because his attitude towards everything in his life is right.”</p>
+              
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="col-lg-3 col-md-6" style="margin-top: 50px;">
+
+
+
+          <div class="card shadow-lg h-100">
+            <div class="card-body">
+              <img src="ste.jpg" alt="" class="img-fluid  mb-3" style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
+              <h3>Steve Jobs</h3>
+              <h5 class="text-muted">Founder, Apple</h5><br>
+              <p class="">“You can’t connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future.” </p>
+              
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-6" style="margin-top: 50px;">
+
+
+
+          <div class="card shadow-lg h-100">
+            <div class="card-body">
+              <img src="st.jpg" alt="" class="img-fluid   mb-3 " style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
+              <h4>Stephen Hawking</h4>
+              <h5 class="text-muted">Scientist</h5><br>
+              <p class="">“However difficult life may seem, there is always something you can do and succeed at.”</p>
+              
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        
+      </div>
+    </div>
+    
+
+  </div>
+  <!--end of card !-->
+
+
+  <div style="
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: arial;
+    color: #fff;border-top: rgb(255,255,255,0.2) 3px solid;" class="py-5" id="agrawal">
+
+    
+    
+
+      <ul class="social-nav model-7" id="footer">
+    <li><a href="https://twitter.com/vineethtrv" class="twitter"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://www.facebook.com/vini.thekingal" class="facebook"> <i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://plus.google.com/u/0/109987289949504261649/posts" class="google-plus"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://plus.google.com/u/0/109987289949504261649/posts" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://plus.google.com/u/0/109987289949504261649/posts" class="pinterest"><i class="fa fa-github"></i></a></li></ul><br/>
+  </div>
+    
+
+
+
+
+
+  </body>
+  </html> 

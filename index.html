@@ -57,11 +57,67 @@
               </script>!-->
 <!--mouse hover end!-->
 
+<!--<script>
+  
+  $('.sb').click(function() {
+  $(this).css('border-color', '#ffffff !important');
+  
+});
+</script>!-->
+
 
 
 
     <style>
 
+
+
+
+
+
+input{
+       background-color:rgba(0,0,0,0) !important;
+       border-color: #0B7F68 !important;
+       
+       
+    }
+    textarea{
+       background-color:rgba(0,0,0,0) !important;
+       border-color: #0B7F68 !important;
+       
+    }
+
+.sb{
+ background-color:rgba(11, 127, 104, 0.4) !important;
+ border-color: rgba(0,0,0,0) !important;
+}
+.sb:hover{
+  background-color:rgba(11, 127, 104, 0.7) !important;
+  
+}
+
+
+.form-control:focus {
+  border-color: rgba(0,0,0,0) !important;
+  box-shadow: inset 0 0px 0px rgba(11, 127, 104, 1), 0 0 8px rgba(11, 127, 104, 1) !important;
+}
+
+.sb:focus,.sb:active {
+   outline: none !important;
+   box-shadow: inset 0 0px 0px rgba(11, 127, 104, 0.7), 0 0 8px rgba(11, 127, 104, 0.7) !important;
+}
+
+input[type="text"]{
+  color:#fff;
+}
+input[type="email"]{
+  color:#fff;
+}
+
+
+textarea[type="text"]{
+  color:#fff;
+}
 
 
 
@@ -480,23 +536,23 @@
 
     <!--navbar!-->
 
-    <nav class="navbar navbar-expand-sm p-0 navbar-dark navbar-custom" id="xxx">
+    <nav class="navbar navbar-expand-sm p-0 navbar-dark navbar-custom please1 sticky-top" id="xxx">
       <div class="container">
         <a class="navbar-brand" href="#"  id="pppp">HOME</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon "></span></button>
-        <div class="collapse navbar-collapse" id="navbarNav" >
+        <div class="collapse navbar-collapse please2" id="navbarNav" >
           <ul class="navbar-nav ml-auto" >
             <li class="nav-item" id="5">
-              <a class="nav-link" href="#" id="1">About Me</a>
+              <a class="nav-link aboutme" href="#about" id="1">About Me</a>
             </li>
             <li class="nav-item" id="6">
-              <a class="nav-link" href="#"  id="2">My Skills</a>
+              <a class="nav-link aboutme" href="#skill"  id="2">My Skills</a>
             </li>
             <li class="nav-item" id="7">
-              <a class="nav-link" href="#"  id="3">Contact Me</a>
+              <a class="nav-link aboutme" href="#contact"  id="3">Contact Me</a>
             </li class="nav-item">
             <li class="nav-item" id="8">
-              <a class="nav-link" href="#"  id="4">Hire Me</a>
+              <a class="nav-link aboutme" href="#about"  id="4">Hire Me</a>
             </li>
           </ul>
         </div>
@@ -599,10 +655,7 @@
     </section>
     <!--carousel end !-->
 
-    <div class="py-5"
-  style="" 
-
-    >
+    <div class="py-5" id="about">
      <div class="container">
       <div class="row">
        <div class="col-lg-3 text-center">
@@ -711,10 +764,7 @@
 
 <!--skills!-->
 
-<div class="py-5 text-center text-white wow fadeIn" style="background-image:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(bc3.png);
-     background-size: cover;
-     background-position: center;
-     background-attachment: fixed; " data-wow-duration="1000ms" data-wow-delay="40ms">
+<div class="py-5 text-center text-white wow fadeIn"  data-wow-duration="1000ms" data-wow-delay="40ms" id="skill">
   
   <div class="container">
 
@@ -781,13 +831,16 @@
 
 
 
-<div class="py-5">
+<div class="py-5" style=" background-image:  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(nature.jpg);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;" id="contact">
   
 <div class="container text-center">
 
   <div class="row">
     <div class="col-lg-12">
-    <h2 style="color: black;">Contact Me</h2>
+    <h2 style="color: black;" class="text-white wow fadeInDown">Contact Me</h2>
     </div>
 
   </div>
@@ -798,23 +851,23 @@
 
 <div class="row">
   <div class="col-lg-4 offset-lg-4">
- <form method="POST" action="https://formspree.io/manujagrawal777@gmail.com">
-            <div class="form-group">
+ <form method="POST" action="https://formspree.io/manujagrawal777@gmail.com" class="wow flipInX" data-wow-duration="1000ms" data-wow-delay="400ms">
+            <div class="form-group ">
                
-                <input type="text" id="name" class="form-control form-control-lg" placeholder="Enter name"  name="replytoname">
+                <input type="text" id="name" class="form-control form-control-lg" placeholder=" Name"  name="Name" style="border-radius: 0px;" required="required">
             </div>
             <div class="form-group">
                 
-                <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter email" name="replytoemail">
+                <input type="email" id="email" class="form-control form-control-lg" placeholder=" Email" name="Email" style="border-radius: 0px;" required="required">
                 
             </div>
             
             <div class="form-group">
                
-                <textarea id="message" rows="3" class="form-control" placeholder="message" name="replytomessage"></textarea>
+                <textarea id="message" rows="3" class="form-control" placeholder="Message" name="Message" style="border-radius: 0px;" required="required" type="text"></textarea>
             </div>
             
-            <button class="btn btn-primary btn-block btn-lg" type="submit">Submit</button>
+            <button class="btn btn-primary btn-block btn-lg sb" type="submit" style="border-radius: 0px;">Send</button>
         </form>
 </div>
 </div>
@@ -843,7 +896,7 @@
     padding-bottom: 30px; 
     text-align: center;
     font-family: arial;
-    color: #fff;border-top: black 3px solid; background-image:  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(nature.jpg);
+    color: #fff;border-top: black 0px solid; background-image:  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(nature.jpg);
      background-size: cover;
      background-position: center;
      background-attachment: fixed;" id="agrawal">
@@ -852,15 +905,15 @@
     
 
       <ul class="social-nav model-7" id="footer">
-    <li class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="1050ms"><a href="htt" class="twitter"><i class="fa fa-twitter"></i></a></li>
+    <li class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="100ms"><a href="htt" class="twitter"><i class="fa fa-twitter"></i></a></li>
 
-    <li class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="1600ms"><a href="https:/" class="facebook"> <i class="fa fa-facebook"></i></a></li>
+    <li class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms"><a href="https:/" class="facebook"> <i class="fa fa-facebook"></i></a></li>
 
-    <li class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1700ms"><a href="https:/" class="google-plus"><i class="fa fa-instagram"></i></a></li>
+    <li class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms"><a href="https:/" class="google-plus"><i class="fa fa-instagram"></i></a></li>
 
-    <li class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="1600ms"><a href="htt" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+    <li class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms"><a href="htt" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
 
-    <li class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="1050ms"><a href="https:" class="pinterest"><i class="fa fa-github"></i></a></li></ul><br/>
+    <li class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms"><a href="https:" class="pinterest"><i class="fa fa-github"></i></a></li></ul><br/>
   </footer>
     
 
@@ -903,7 +956,21 @@ $('#8').hover(
 
 <script>
   
+  var headerHeight=$('.please1').outerHeight();
 
+$('.aboutme').click(function(e) {
+  //alert('manuj');
+  var linkHref = $(this).attr('href');
+  
+  //console.log(headerHeight);
+  //console.log($(linkHref).offset().top);
+  $('html, body').animate({
+
+    scrollTop: $(linkHref).offset().top - headerHeight
+
+  },1000);
+  e.preventDefault();
+});
 
 
 </script>

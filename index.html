@@ -19,7 +19,6 @@
 
 
 
-
     
 
 
@@ -43,6 +42,24 @@
     </script>
 
 
+
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+            <!--mouse hover!
+              <script>
+                document.querySelector('.nav-link').hover(function(){
+                  addClass('animated flipInX');
+                })
+
+              </script>!-->
+<!--mouse hover end!-->
+
+
+
+
     <style>
 
 
@@ -55,12 +72,12 @@
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(255,255,255,.8);
+    color: #fff;
     padding: 0.8rem 1rem;
 }
 /* change the link color and add padding for height */
 .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
+    color: #fff;
     padding: 1.2rem 1.2rem;
 }
 /* change the color of active or hovered links */
@@ -83,22 +100,32 @@
 
     #preloader {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 999999;
-      background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: black;
     }
 
 
 
 
     #preloader > i{
-    	position: absolute;
-      font-size: 48px;
-      top: 50%;
-      left: 50%;
+    	
+
+       position: absolute;
+  font-size: 36px;
+  line-height: 36px;
+  top: 50%;
+  left: 50%;
+  height: 36px;
+  width: 36px;
+  margin-top: -15px;
+  margin-left: -15px;
+  display: inline-block;
+
+
       color: #0B7F68;
       
 
@@ -116,10 +143,10 @@
     body{
      font-family: 'Roboto Slab', serif; 
      
-     background-image:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(.png);
+      /*  background-image:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(.png);
      background-size: cover;
      background-position: center;
-     background-attachment: fixed; 
+     background-attachment: fixed;*/ 
       margin:0px;
      height: 100%;
   	/*padding: 0; 
@@ -159,12 +186,12 @@
      border-bottom: #085243 3px solid;opacity: 0.8;
      
    }*/
-   #pppp{
+   /*#pppp{
     color: #fff;
   }
   #pppp:hover{
    color:#fff;
-  }
+  }*/
   .btn-outline-light{
   	color: #fff !important;
   }
@@ -250,7 +277,7 @@
   	background-attachment: fixed;*/
   }
   .inp{
-  	background-image:  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(nature.jpg);
+  	background-image:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(nature.jpg);
   	background-size: cover;
   	background-position: center;
   	background-attachment: fixed; 
@@ -459,17 +486,17 @@
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon "></span></button>
         <div class="collapse navbar-collapse" id="navbarNav" >
           <ul class="navbar-nav ml-auto" >
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="pppp">About Me</a>
+            <li class="nav-item" id="5">
+              <a class="nav-link" href="#" id="1">About Me</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"  id="pppp">My Skills</a>
+            <li class="nav-item" id="6">
+              <a class="nav-link" href="#"  id="2">My Skills</a>
             </li>
-            <li class="nav-item" >
-              <a class="nav-link" href="#"  id="pppp">Contact Me</a>
+            <li class="nav-item" id="7">
+              <a class="nav-link" href="#"  id="3">Contact Me</a>
             </li class="nav-item">
-            <li class="nav-item">
-              <a class="nav-link" href="#"  id="pppp">Hire Me</a>
+            <li class="nav-item" id="8">
+              <a class="nav-link" href="#"  id="4">Hire Me</a>
             </li>
           </ul>
         </div>
@@ -482,7 +509,7 @@
 
     <!-- carousal start!-->
     <section id="showcase">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -493,10 +520,10 @@
           <div class="carousel-item carousel-image-1 active">
             <div class="container text-center text-white " >
               <div class="big">
-                <h1  style="font-weight: 700; color: #0B7F68;" class="display-3 mediaq animated  fadeInDownBig" id=mp>
+                <h1  style="font-weight: 700; color: #0B7F68;" class="display-3 mediaq animated fadeInLeftBig" id=mp>
                 MANUJ AGRAWAL</h1>
                 
-                <p class=" pera animated  fadeInUpBig">Front End Web Developer | Competative Coder</p>
+                <p class=" pera animated fadeInRightBig">Front End Web Developer | Competative Coder</p>
               </div>
               
               <div class="carousel-caption   mb-5">
@@ -511,9 +538,9 @@
           <div class="carousel-item carousel-image-2">
             <div class="container text-center text-white">
 
-            	<h1  style="font-weight: 700;color: #0B7F68;" class=" display-3 mediaq2 animated  fadeInDownBig">FUN WITH <span style="color: #fff;">JAVASCRIPT</span></h1><br>
+            	<h1  style="font-weight: 700;color: #0B7F68;" class=" display-3 mediaq2 animated fadeInLeftBig">FUN WITH <span style="color: #fff;">JAVASCRIPT</span></h1><br>
               <!--<p class="lead">PIG GAME</p><span style="display: inline;">REACTION TESTER</span>!-->
-              <p class="pera2 animated  fadeInUpBig">Let's Play</p><br class="kal">
+              <p class="pera2 animated fadeInRightBig">Let's Play</p><br class="kal">
               <a href="#" class="btn  btn-outline-dark btn-lg game animated  infinite pulse" id="mmm">Pig Game</a>&nbsp;&nbsp;
               <a href="#" class="btn  btn-outline-dark btn-lg game animated  infinite pulse" id="mmm">Reaction Tester</a>
 
@@ -579,7 +606,7 @@
      <div class="container">
       <div class="row">
        <div class="col-lg-3 text-center">
-        <h3>About Me</h3>
+        <h3 >About Me</h3>
       </div>
       
     </div>
@@ -603,7 +630,7 @@
 
 
 
-  				<div class="card shadow-lg h-100">
+  				<div class="card h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="card-body">
               <img src="al.jpg" alt="" class="img-fluid  mb-3" style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
               <h3>Albert Einstein</h3>
@@ -622,7 +649,7 @@
 
 
 
-          <div class="card shadow-lg h-100">
+          <div class="card  h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="card-body">
               <img src="Sundar.jpg" alt="" class="img-fluid  mb-3" style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
               <h3>Sundar Pichai</h3>
@@ -637,11 +664,11 @@
 
 
 
-        <div class="col-lg-3 col-md-6" style="margin-top: 50px;">
+        <div class="col-lg-3 rotateInDownLeft" style="margin-top: 50px;">
 
 
 
-          <div class="card shadow-lg h-100">
+          <div class="card  h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="900ms">
             <div class="card-body">
               <img src="ste.jpg" alt="" class="img-fluid  mb-3" style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
               <h3>Steve Jobs</h3>
@@ -654,11 +681,11 @@
 
 
 
-        <div class="col-lg-3 col-md-6" style="margin-top: 50px;">
+        <div class="col-lg-3 col-md-6 " style="margin-top: 50px;">
 
 
 
-          <div class="card shadow-lg h-100">
+          <div class="card  h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="1200ms">
             <div class="card-body">
               <img src="st.jpg" alt="" class="img-fluid   mb-3 " style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
               <h4>Stephen Hawking</h4>
@@ -684,14 +711,14 @@
 
 <!--skills!-->
 
-<div class="py-5 text-center text-white" style="background-image:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(bc3.png);
+<div class="py-5 text-center text-white wow fadeIn" style="background-image:  linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(bc3.png);
      background-size: cover;
      background-position: center;
-     background-attachment: fixed; ">
+     background-attachment: fixed; " data-wow-duration="1000ms" data-wow-delay="40ms">
   
   <div class="container">
 
-    <div class="row">
+    <div class="row wow zoomInUp" data-wow-duration="100ms" data-wow-delay="30ms">
       <div class="col-lg-12">
         <h3 style="color: black">MY SKILLS</h3>
       </div>
@@ -700,43 +727,43 @@
 
   <div class="row pt-4">
 
-    <div class="col-lg-2 col-md-3">
+    <div class="col-lg-2 col-md-3 " >
 
-      <img src="ht.png" class="img-fluid mb-5" height="100px" width="100px"></img>
+      <img src="ht.png" class="img-fluid mb-5 wow fadeInDown" height="100px" width="100px" data-wow-duration="1000ms" data-wow-delay="300ms"></img>
       
     </div>
 
 
-<div class="col-lg-2 col-md-3">
+<div class="col-lg-2 col-md-3 " >
 
-      <img src="css.png" class="img-fluid mb-5" height="110px" width="110px"></img>
+      <img src="css.png" class="img-fluid mb-5 wow fadeInUp" height="110px" width="110px" data-wow-duration="1000ms" data-wow-delay="450ms"></img>
       
     </div>
 
 
 
-    <div class="col-lg-2 col-md-3">
+    <div class="col-lg-2 col-md-3 " >
 
-      <img src="js.png" class="img-fluid mb-5" height="70px" width="70px"></img>
+      <img src="js.png" class="img-fluid mb-5 wow fadeInDown" height="70px" width="70px" data-wow-duration="1000ms" data-wow-delay="650ms"></img>
       
     </div>
 
-    <div class="col-lg-2 col-md-3">
+    <div class="col-lg-2 col-md-3 " >
 
-      <img src="jquery.png" class="img-fluid mb-5" height="100px" width="100px" style="padding-top: 5px;"></img>
+      <img src="jquery.png" class="img-fluid mb-5 wow fadeInUp" height="100px" width="100px" style="padding-top: 5px;" data-wow-duration="1000ms" data-wow-delay="550ms"></img>
       
     </div>
 
 
-    <div class="col-lg-2 col-md-3">
+    <div class="col-lg-2 col-md-3 " >
 
-      <img src="boot.png" class="img-fluid mb-5" height="100px" width="100px" style="padding-top: 20px;"></img>
+      <img src="boot.png" class="img-fluid mb-5 wow fadeInDown" height="100px" width="100px" style="padding-top: 20px;" data-wow-duration="1000ms" data-wow-delay="650ms"></img>
       
     </div>
 
-    <div class="col-lg-2 col-md-3">
+    <div class="col-lg-2 col-md-3 " >
 
-      <img src="c++.png" class="img-fluid mb-5" height="80px" width="70px" style="padding-top: 22px;"></img>
+      <img src="c++.png" class="img-fluid mb-5 wow fadeInUp" height="80px" width="70px" style="padding-top: 22px;" data-wow-duration="1000ms" data-wow-delay="650ms"></img>
         
       
     </div>
@@ -767,11 +794,15 @@
     
 
       <ul class="social-nav model-7" id="footer">
-    <li><a href="https://twitter.com/vineethtrv" class="twitter"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="https://www.facebook.com/vini.thekingal" class="facebook"> <i class="fa fa-facebook"></i></a></li>
-    <li><a href="https://plus.google.com/u/0/109987289949504261649/posts" class="google-plus"><i class="fa fa-instagram"></i></a></li>
-    <li><a href="https://plus.google.com/u/0/109987289949504261649/posts" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-    <li><a href="https://plus.google.com/u/0/109987289949504261649/posts" class="pinterest"><i class="fa fa-github"></i></a></li></ul><br/>
+    <li class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="1050ms"><a href="htt" class="twitter"><i class="fa fa-twitter"></i></a></li>
+
+    <li class="wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="1600ms"><a href="https:/" class="facebook"> <i class="fa fa-facebook"></i></a></li>
+
+    <li class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1700ms"><a href="https:/" class="google-plus"><i class="fa fa-instagram"></i></a></li>
+
+    <li class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="1600ms"><a href="htt" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+
+    <li class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="1050ms"><a href="https:" class="pinterest"><i class="fa fa-github"></i></a></li></ul><br/>
   </footer>
     
 
@@ -780,4 +811,45 @@
 
 
   </body>
+
+  <script>
+  
+  $('#5').hover(
+       function(){ $('#1').toggleClass('animated swing')}
+       
+)
+
+
+  $('#6').hover(
+       function(){ $('#2').toggleClass('animated swing')}
+       
+)
+
+
+$('#7').hover(
+       function(){ $('#3').toggleClass('animated swing')}
+       
+)
+
+$('#8').hover(
+       function(){ $('#4').toggleClass('animated swing')}
+       
+)
+
+
+  //$('#5').on('mouseleave', function() {
+   //$('#1').removeClass('animated flipInX');
+//});
+
+</script>
+
+<script>
+  
+
+
+
+</script>
+
+
+
   </html> 

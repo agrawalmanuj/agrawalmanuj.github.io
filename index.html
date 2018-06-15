@@ -541,28 +541,28 @@ textarea[type="text"]{
 
     <!--navbar!-->
 
-    <nav class="navbar navbar-expand-sm p-0 navbar-dark navbar-custom please1 sticky-top" id="xxx">
-      <div class="container">
+    <nav class="navbar navbar-expand-sm p-0 navbar-dark navbar-custom please1 fixed-top" id="xxx">
+      <div class="container" id="pqrs">
        <!-- <a class="navbar-brand" href="#"  id="pppp">HOME</a>!-->
         <button class="navbar-toggler mr-auto py-2" data-toggle="collapse" data-target="#navbarNav" style="border:none;" id="bar"><span class="navbar-toggler-ico" id="sicon"><i class="fa fa-navicon" aria-hidden="true" style="color:white;font-size: 30px;" id="iconx"></i></span></button>
         <div class="collapse navbar-collapse please2" id="navbarNav" >
           <ul class="navbar-nav mr-auto">
             <li class="nav-item" style="background-color:rgba(11, 127, 104, 0.4);">
-              <a class="nav-link text-white active aboutme" href="#showcase"  id="pppp">HOME</a>
+              <a class="nav-link text-white active aboutme" href="#showcase"  id="pppp" data-toggle="collapse" data-target=".navbar-collapse.show">HOME</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto" >
             <li class="nav-item" id="5">
-              <a class="nav-link aboutme" href="#about" id="1">About Me</a>
+              <a class="nav-link aboutme" href="#about" id="1" data-toggle="collapse" data-target=".navbar-collapse.show">About Me</a>
             </li>
             <li class="nav-item" id="6">
-              <a class="nav-link aboutme" href="#skill"  id="2">My Skills</a>
+              <a class="nav-link aboutme" href="#skill"  id="2" data-toggle="collapse" data-target=".navbar-collapse.show">My Skills</a>
             </li>
             <li class="nav-item" id="7">
-              <a class="nav-link aboutme" href="#contact"  id="3">Contact Me</a>
+              <a class="nav-link aboutme" href="#contact"  id="3" data-toggle="collapse" data-target=".navbar-collapse.show">Contact Me</a>
             </li class="nav-item">
             <li class="nav-item" id="8">
-              <a class="nav-link aboutme" href="#about"  id="4">Hire Me</a>
+              <a class="nav-link aboutme" href="#about"  id="4" data-toggle="collapse" data-target=".navbar-collapse.show">Hire Me</a>
             </li>
           </ul>
         </div>
@@ -967,6 +967,21 @@ $('#bar').click(function(){
 
   $('#iconx').delay(1000).toggleClass('fa-navicon fa-times');
 })
+$('.nav-link').click(function(){
+
+  $('#iconx').delay(1000).toggleClass('fa-navicon fa-times');
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 

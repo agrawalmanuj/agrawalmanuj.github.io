@@ -120,6 +120,11 @@ textarea[type="text"]{
 }
 
 
+#bar:focus,#bar:active {
+  outline: none !important;
+  }
+
+
 
 /* change the background color */
 .navbar-custom {
@@ -538,9 +543,14 @@ textarea[type="text"]{
 
     <nav class="navbar navbar-expand-sm p-0 navbar-dark navbar-custom please1 sticky-top" id="xxx">
       <div class="container">
-        <a class="navbar-brand" href="#"  id="pppp">HOME</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon "></span></button>
+       <!-- <a class="navbar-brand" href="#"  id="pppp">HOME</a>!-->
+        <button class="navbar-toggler mr-auto" data-toggle="collapse" data-target="#navbarNav" style="border:none;" id="bar"><span class="navbar-toggler-icon "></span></button>
         <div class="collapse navbar-collapse please2" id="navbarNav" >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" style="background-color:#0B7F68;">
+              <a class="nav-link text-white active" href="personal.html"  id="pppp">HOME</a>
+            </li>
+          </ul>
           <ul class="navbar-nav ml-auto" >
             <li class="nav-item" id="5">
               <a class="nav-link aboutme" href="#about" id="1">About Me</a>
@@ -831,7 +841,7 @@ textarea[type="text"]{
 
 
 
-<div class="py-5" style=" background-image:  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(nature.jpg);
+<div class="py-5 text-white" style=" background-image:  linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(nature.jpg);
      background-size: cover;
      background-position: center;
      background-attachment: fixed;" id="contact">
@@ -950,6 +960,11 @@ $('#8').hover(
 
   //$('#5').on('mouseleave', function() {
    //$('#1').removeClass('animated flipInX');
+//});
+
+//$('.bar').click(function() {
+// $(this).css('border','none');
+
 //});
 
 </script>

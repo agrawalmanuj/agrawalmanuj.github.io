@@ -347,7 +347,7 @@ textarea[type="text"],textarea[type="text"]:hover,textarea[type="text"]:focus,te
   	background-size: cover;
   	background-position: center;
   	background-attachment: fixed; 
-  	
+  	display:block;
   }
 
 
@@ -384,8 +384,24 @@ textarea[type="text"],textarea[type="text"]:hover,textarea[type="text"]:focus,te
       font-size: 24px;
        line-height: 44px;
        }
-     
+     .inp{
+       /*background-image:none;
+       background-color:black;*/
 
+        background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(cardbc111.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    display:block;
+
+
+     }
+     .card:hover{
+       color:#0B7F68;
+     }
+    #myin{
+      /*color:black !important;*/
+    }
 
 
 
@@ -690,7 +706,7 @@ textarea[type="text"],textarea[type="text"]:hover,textarea[type="text"]:focus,te
   	<div class="container">
   		<div class="row">
   			<div class="col-lg-12">
-  				<h2 class="text-white">My Inspiration</h2>
+  				<h2  id="myin" style="color: white;">My Inspiration</h2>
   			</div>
   		</div>
   		<div class="row py-5">
@@ -698,7 +714,7 @@ textarea[type="text"],textarea[type="text"]:hover,textarea[type="text"]:focus,te
 
 
 
-  				<div class="card h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="300ms">
+  				<div class="card h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="300ms" id="c1">
             <div class="card-body">
               <img src="al.jpg" alt="" class="img-fluid  mb-3" style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
               <h3>Albert Einstein</h3>
@@ -717,7 +733,7 @@ textarea[type="text"],textarea[type="text"]:hover,textarea[type="text"]:focus,te
 
 
 
-          <div class="card  h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="card  h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="600ms" id="c2">
             <div class="card-body">
               <img src="Sundar.jpg" alt="" class="img-fluid  mb-3" style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
               <h3>Sundar Pichai</h3>
@@ -736,7 +752,7 @@ textarea[type="text"],textarea[type="text"]:hover,textarea[type="text"]:focus,te
 
 
 
-          <div class="card  h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="900ms">
+          <div class="card  h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="900ms" id="c3">
             <div class="card-body">
               <img src="ste.jpg" alt="" class="img-fluid  mb-3" style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
               <h3>Steve Jobs</h3>
@@ -753,7 +769,7 @@ textarea[type="text"],textarea[type="text"]:hover,textarea[type="text"]:focus,te
 
 
 
-          <div class="card  h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="1200ms">
+          <div class="card  h-100 wow rotateInDownLeft" style="box-shadow: 14px 14px 32px -11px rgba(11,127,104,0.40);" data-wow-duration="1000ms" data-wow-delay="1200ms" id="c4">
             <div class="card-body">
               <img src="st.jpg" alt="" class="img-fluid   mb-3 " style=" margin-top: -50px;width: 150px;height: 150px;border-radius: 50%;"><br><br>
               <h4>Stephen Hawking</h4>
@@ -1014,6 +1030,23 @@ $('.aboutme').click(function(e) {
 
 </script>
 
+<script>
+  
+/*$(window).resize(function(){
+
+       if ($(window).width() <= 480) {  
+
+              $('#c3').attr("data-wow-delay","400ms");
+               $('#c4').attr("data-wow-delay","50000ms");
+               //console.log('manuj');
+
+       }     
+
+});*/
+
+ 
+
+</script>
 
 
   </html> 

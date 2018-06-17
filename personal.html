@@ -170,6 +170,7 @@
 
 
 
+
       #preloader {
         position: fixed;
     top: 0;
@@ -279,11 +280,11 @@
       background-size: cover; }
 
       .carousel-image-2 {
-        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("game.jpg");
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("game.jpg");
         background-size: cover; }
 
         .carousel-image-3 {
-          background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,1)),url("code.jpg");
+          background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url("ng2.jpg");
           background-size: cover; } 
 
           .carousel-image-4 {
@@ -303,12 +304,14 @@
              color: #fff;
              border:2px solid #fff;
              border-radius: 0px;
+            
            }
            #mmm:hover{
              
              background-color: #085243 !important;
 
-             border-color: #085243 !important;
+             border-color: rgba(0,0,0,0) !important;
+             
            }
 
          }
@@ -373,18 +376,32 @@
       }*/
 
       .mediaq2 {
-        font-size: 30px;
-        padding-top: 75px;
-         
+        font-size: 50px;
+        padding-top: 190px;
+          letter-spacing: 3px;
       }
       .pera2{
-      	display: none;
+      	/*display: ;*/
+        letter-spacing: 1.3px;
       }
+
+      
+      .mediaq3 {
+        font-size: 50px;
+        padding-top: 190px;
+          letter-spacing: 3px;
+      }
+      .pera3{
+        /*display: ;*/
+        letter-spacing: 1.3px;
+      }
+
+
       .game{
       	font-size: 14px;
       }
       .kal{
-      	display: none;
+      	display: ;
       }
 
     #footer a {
@@ -409,12 +426,15 @@
       }
       .carousel-control-prev
   {
-        bottom: 40%;
+        bottom: 20%;
         left:-5%;
+        color:#0B7F68;
   }
   .carousel-control-next{
-    bottom: 40%;
+    bottom: 20%;
     right:-5%;
+    color:#0B7F68;
+    
   }
 
 
@@ -456,6 +476,36 @@
       	font-size:18px;
       	font-weight: -10;
          letter-spacing: 2px;
+      }
+
+
+    
+    .mediaq3 {
+        font-size: 4.5rem;
+        padding-top: 200px;
+         letter-spacing: 5px;
+        
+      }
+      .pera3{
+        font-size:18px;
+        font-weight: -10;
+         letter-spacing: 2px;
+      }
+
+
+
+      .carousel-control-prev{
+        
+        left:-5%;
+        font-size:30px;
+        color:#0B7F68;
+
+      }
+      .carousel-control-next{
+        
+        right:-5%;
+         font-size:30px;
+         color:#0B7F68;
       }
     }
 
@@ -569,7 +619,6 @@
 
 
 
-
     </style> 
 
 
@@ -650,7 +699,7 @@
               	<h1  style="font-weight: 700;color: #0B7F68;" class=" display-3 mediaq2 animated fadeInLeftBig">FUN WITH <span style="color: #fff;">JAVASCRIPT</span></h1><br>
                 <!--<p class="lead">PIG GAME</p><span style="display: inline;">REACTION TESTER</span>!-->
                 <p class="pera2 animated fadeInRightBig">Let's Play</p><br class="kal">
-                <a href="https://agrawalmanuj.github.io/gmae" class="btn  btn-outline-dark btn-lg game animated  infinite pulse" id="mmm">Pig Game</a><!--&nbsp;&nbsp;
+                <a href="https://agrawalmanuj.github.io/gmae" class="btn btn-lg btn-outline-dark game animated  infinite pulse" id="mmm">Pig Game</a><!--&nbsp;&nbsp;
                 <a href="#" class="btn  btn-outline-dark btn-lg game animated  infinite pulse" id="mmm">Reaction Tester</a>!-->
 
                 <div class="carousel-caption d-none d-sm-block mb-5">
@@ -666,10 +715,10 @@
 
             <div class="carousel-item carousel-image-3">
               <div class="container text-center text-white">
-              	<h1  style="padding-top: 140px;font-weight: 700;color: #fff" class="display-3 mediaq3 animated  fadeInDownBig">JQUERY <span style="color: #0B7F68">CODE PLAYER</span></h1><br>
-              	<p class="lead pera3 animated  fadeInUpBig">You Can Code Html Css Javascript Simultaneously On Web</p><br>
-              	<a href="#" class="btn btn-outline-dark btn-lg animated  infinite pulse" id="mmm" >Code Player</a>&nbsp;&nbsp;
-              	<a href="#" class="btn btn-outline-dark btn-lg animated  infinite pulse" id="mmm">Source Code</a>
+              	<h1  style="font-weight: 700;color: #fff" class="display-3 mediaq3 animated  fadeInLeftBig">NAME <span style="color: #0B7F68">GENERATOR</span></h1><br>
+              	<p class="lead pera3 animated  fadeInRightBig">Get Your Favourite Name</p><br>
+              	<a href="https://agrawalmanuj.github.io/name" class="btn btn-outline-dark btn-lg animated  infinite pulse" id="mmm" >Name Generator</a>&nbsp;&nbsp;
+              	
                 <div class="carousel-caption d-none d-sm-block text-right mb-5">
                   
                 </div>
@@ -677,7 +726,7 @@
             </div>
 
 
-            <div class="carousel-item carousel-image-4">
+            <!--<div class="carousel-item carousel-image-4">
               <div class="container text-center text-white">
               	<h1  style="padding-top: 140px;font-weight: 700;color: #0B7F68" class=" display-3 mediaq4 animated  fadeInDownBig">Themes <span style="color: #fff;">&</span> Templates</h1><br>
               	<p class="lead pera4 animated  fadeInUpBig">You Can Use this For your Website</p><br>
@@ -688,7 +737,7 @@
                   
                 </div>
               </div>
-            </div>
+            </div>!-->
 
 
 
@@ -732,7 +781,7 @@
     			</div>
     		</div>
     		<div class="row py-5">
-    			<div class="col-lg-3 col-md-6" style="margin-top: 50px;">
+    			<div class="col-lg-3 " style="margin-top: 50px;">
 
 
 
@@ -751,7 +800,7 @@
 
 
 
-          <div class="col-lg-3 col-md-6" style="margin-top: 50px;">
+          <div class="col-lg-3 " style="margin-top: 50px;">
 
 
 
@@ -787,7 +836,7 @@
 
 
 
-          <div class="col-lg-3 col-md-6 " style="margin-top: 50px;">
+          <div class="col-lg-3 " style="margin-top: 50px;">
 
 
 

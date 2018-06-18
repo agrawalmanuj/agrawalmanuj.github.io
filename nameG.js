@@ -8,7 +8,7 @@ function loadNames(e){
      const amount = document.getElementById('quantity').value;
 
 
-     var url = 'https://uinames.com/api/?';
+     var url = 'http://uinames.com/api/?';
 
      if(origin !== ''){
           url += `region=${origin}&`;
